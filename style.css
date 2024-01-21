@@ -1,0 +1,134 @@
+/*************
+Container
+Landing
+******************/
+
+.container-landing {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    gap: 10px;
+    background-color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.greeting {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    grid-column: span 3;
+    min-height: 300px;
+}
+
+.prompts {
+    flex:1;
+    grid-column: span 3;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    background-color: orange;
+}
+
+.element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: blueviolet;
+    margin: 5px;
+}
+
+/*************
+Container
+Skills
+******************/
+
+.container-skills {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    background-color: silver;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.skills {
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1;
+}
+
+.skills-label {
+    background-color: white;
+}
+
+.showoff {
+    background-color: pink;
+    grid-row-start: 1;
+    grid-row: span 3;
+    grid-column-start: 2;
+}
+
+
+/*************
+Media Queries
+******************/
+
+@media (max-width: 600px) {
+    .container-landing {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr;
+        gap: 10px;
+    }
+
+    .greeting {
+        min-height: auto;
+    }
+
+    .prompts {
+        flex-direction: column;
+    }
+
+    .element {
+        min-height: 100px;
+    }
+
+    /*********************/
+
+    .container-skills {
+        grid-template-rows: 0.5fr 1fr;
+        gap: 10px;
+    }
+
+    .skills-label {
+        text-align: center;
+   
+    }
+
+    .skills-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills {
+        background-color: blueviolet;
+        display: flex;
+        flex-direction: column;
+        grid-column: span 3;
+    }
+
+    .skill {
+        margin: 20px;
+        background-color: gray;
+    }
+
+    .showoff {
+        background-color: pink;
+        grid-row-start: 2;
+        grid-column: span 3;
+    }
+}
