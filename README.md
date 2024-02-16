@@ -1,4 +1,7 @@
 # cssBasicsDemo_Grid_LayoutAndSizing
+## Live GitHub Pages Demo:
+https://spiderandcat.github.io/cssBasicsDemo_Grid/
+
  This is a repo to showcase my understanding of basic, yet essential, programming concepts. 
  This repo demonstrates skills in: Web Development, specifically: CSS Grid
  
