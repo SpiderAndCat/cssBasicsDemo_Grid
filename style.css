@@ -73,67 +73,6 @@ Skills
 }
 
 
-/*************
-Media Queries
-******************/
-
-@media (max-width: 600px) {
-    .container-landing {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.5fr 1fr;
-        gap: 10px;
-    }
-
-    .greeting {
-        min-height: auto;
-    }
-
-    .prompts {
-        flex-direction: column;
-    }
-
-    .element {
-        min-height: 100px;
-    }
-
-    /*********************/
-
-    .container-skills {
-        grid-template-rows: 0.5fr 1fr;
-        gap: 10px;
-    }
-
-    .skills-label {
-        text-align: center;
-   
-    }
-
-    .skills-list {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    .skills {
-        background-color: blueviolet;
-        display: flex;
-        flex-direction: column;
-        grid-column: span 3;
-    }
-
-    .skill {
-        margin: 20px;
-        background-color: gray;
-    }
-
-    .showoff {
-        background-color: pink;
-        grid-row-start: 2;
-        grid-column: span 3;
-    }
-}
-
-
 /*NEW: Flexbox Pricing container*/
 
 .pricing-container {
@@ -141,17 +80,6 @@ Media Queries
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-}
-
-@media (max-width: 600px) {
-    .pricing-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .plan-features > li{
-        font-size: 15px;
-    }
 }
 
 .plan-button {
@@ -227,3 +155,76 @@ Media Queries
 .premium {
     order: 1;
 }
+
+
+/*************
+Media Queries
+******************/
+
+@media (max-width: 600px) {
+
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan-features > li{
+        font-size: 15px;
+    }
+
+
+    .container-landing {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr;
+        gap: 10px;
+    }
+
+    .greeting {
+        min-height: auto;
+    }
+
+    .prompts {
+        flex-direction: column;
+    }
+
+    .element {
+        min-height: 100px;
+    }
+
+    /*********************/
+
+    .container-skills {
+        grid-template-rows: 0.5fr 1fr;
+        gap: 10px;
+    }
+
+    .skills-label {
+        text-align: center;
+   
+    }
+
+    .skills-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills {
+        background-color: blueviolet;
+        display: flex;
+        flex-direction: column;
+        grid-column: span 3;
+    }
+
+    .skill {
+        margin: 20px;
+        background-color: gray;
+    }
+
+    .showoff {
+        background-color: pink;
+        grid-row-start: 2;
+        grid-column: span 3;
+    }
+}
+
