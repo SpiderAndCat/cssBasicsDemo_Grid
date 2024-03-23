@@ -132,3 +132,98 @@ Media Queries
         grid-column: span 3;
     }
 }
+
+
+/*NEW: Flexbox Pricing container*/
+
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan-features > li{
+        font-size: 15px;
+    }
+}
+
+.plan-button {
+    border: 0px;
+    background-color: orange;
+    border-radius: 10px;
+    height: 40px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.pricing-plan {
+    flex: 1;
+    text-align: center;
+    border-radius: 10px;
+    background-color: lightskyblue;
+    padding: 20px;
+
+    max-width: 240px;
+
+
+    /*
+    Setting `min-width` before in the code, 
+    to show it's authority overwrites
+    even `width` being written after
+    */
+
+    /*
+    Using `width` for default case,
+    where `flex-direction: row`
+
+    Adding logic for `height` in the 
+    `@media` where the `flex-direction` changes
+    to `column`
+    */
+    min-width: 200px; /* Overrules `width` */
+
+    max-height: 500px;
+    width: 50px; /* Will not affect webpage, even though
+                    it's written after*/
+}
+
+.plan-title {
+    font-weight: 900;
+    font-size:larger;
+    color: navy;
+    text-align: center;
+}
+
+.plan-price {
+    font-weight: 900;
+    font-size:large;
+    color: #920;
+    text-align: center;
+
+}
+
+.plan-features {
+    background-color: ghostwhite;
+    font-weight: 300;
+    font-size:medium;
+    color: gray;
+    padding: 20px;
+    max-height: 100px;
+}
+
+.plan-features > li {
+    list-style: none;
+    margin: 10px;
+}
+
+.premium {
+    order: 1;
+}
