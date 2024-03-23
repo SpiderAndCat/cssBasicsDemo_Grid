@@ -1,6 +1,7 @@
 # cssBasicsDemo_Grid_LayoutAndSizing
-## Live GitHub Pages Demo:
-https://spiderandcat.github.io/cssBasicsDemo_Grid/
+## Live GitHub Pages Demo (now with Flexbox pricing table):
+[https://spiderandcat.github.io/cssBasicsDemo_Grid/
+](https://spiderandcat.github.io/cssBasicsDemo_Grid_Flexbox/)
 
  This is a repo to showcase my understanding of basic, yet essential, programming concepts. 
  This repo demonstrates skills in: Web Development, specifically: CSS Grid
@@ -35,7 +36,7 @@ This webpapge demo showcases the use of CSS Grid, Flexboxes in grid elements, an
 
 # CSS Basics Demo: Flexbox
 ## Live GitHub Pages Demo:
-https://spiderandcat.github.io/cssBasicsDemo_Flexbox/
+(now in the Grid page as well: https://spiderandcat.github.io/cssBasicsDemo_Grid_Flexbox/)
 
 This is a repo to showcase my understanding of basic, yet essential, programming concepts.  
 This repo demonstrates skills in: **Web Development**, specifically: **CSS Flexbox**
